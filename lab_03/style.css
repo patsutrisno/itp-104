@@ -1,0 +1,33 @@
+main {
+    background-color: lightblue;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+section {
+    text-align: center;
+}
+
+.resume {
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-image: url('./paper.jpeg');
+}
+
+.usc-logo {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+.py-logo {
+    width: 90px;
+    height: 100px;
+    float: right;
+    margin-right: 10px;
+}
+
+span {
+    float: right;
+}
