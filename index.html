@@ -3,35 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Patricia Sutrisno | Student Page</title>
+
+    <style>
+        div {
+            width: 950px;
+            margin: auto;
+        }
+
+        main {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .column {
+            width: 100%;
+            margin: 0;
+            padding: 20px;
+        }
+
+        hr {
+            margin: 25px 0 0 0;
+        }
+
+        strong {
+            background-color: blue;
+            color: white;
+        }
+
+        img {
+            height: 200px;
+            width: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Patricia Sutrisno</h1>
-    <a href="mailto:pcsutris@usc.edu">pcsutris@usc.edu</a>
-    <p>Favorite Color: <strong>Blue</strong></p>
-    <p>Favorite website: <a href="https://www.youtube.com">YouTube</a></p>
-    <p>Favorite activity:</p>
-    <img src="dance.jpeg" />
-    <p>Fall 2023 Schedule:</p>
-    <ul>
-        <li>🧪 HBIO 408: Biomechanics</li>
-        <li>👵🏻 GERO 310: Physiology of Aging</li>
-        <li>🐍 ITP 115: Programming in Python</li>
-        <li>💻 ITP 104: Web Publishing</li>
-    </ul>
-    <hr>
-    <p>Assignments:</p>
-    <ul>
-        <li>Some assignment 🤷‍♀️</li>
-    </ul>
-    <p>Labs:</p>
-    <ul>
-        <li><a href="lab_03/index.html">Resume</a></li>
-        <li><a href="assignment_02/index.html">Interests</a></li>
-    </ul>
+    <div>
+        <h1>Patricia Sutrisno</h1>
+        <a href="mailto:pcsutris@usc.edu">pcsutris@usc.edu</a>
+        <hr>
 
+        <main>
+            <div class="column">
+                <p>Favorite Color: <strong>Blue</strong></p>
+                <p>Favorite website: <a href="https://www.youtube.com">YouTube</a></p>
+                <p>Favorite activity:</p>
+                <img src="dance.jpeg" />
+            </div>
+
+            <div class="column">
+                <p>Fall 2023 Schedule:</p>
+                <ul>
+                    <li>🧪 HBIO 408: Biomechanics</li>
+                    <li>👵🏻 GERO 310: Physiology of Aging</li>
+                    <li>🐍 ITP 115: Programming in Python</li>
+                    <li>💻 ITP 104: Web Publishing</li>
+                </ul>
+            </div>
+        </main>
+        <hr>
+
+        <main>
+            <div class="column">
+                <p>Assignments:</p>
+                <ul>
+                    <li><a href="assignment_01/index.html">Assignment 1: Resume</a></li>
+                    <li><a href="assignment_02/index.html">Assignment 2: Interests</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <p>Labs:</p>
+                <ul>
+                    <li><a href="lab_02/index.html">Lab 2: Student Page</a></li>
+                    <li><a href="lab_03/index.html">Lab 3: Updated Resume</a></li>
+                    <li><a href="index.html">Lab 4: Updated Student Page</a></li>
+                </ul>
+            </div>
+        </main>
+    </div>
     
 </body>
 </html>
