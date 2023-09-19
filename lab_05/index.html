@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial;
+        }
+
+        form {
+            padding: 45px 100px;
+            border: 2px solid darkgrey;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0 0 40px 0;
+        }
+
+        .form-group {
+            height: 40px;
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .additional-info {
+            height: 120px;
+            margin: 10px 0 24px 0;
+            align-items: start;
+        }
+
+        .thin {
+            height: 30px;
+        }
+
+        label, .label {
+            width: 200px;
+            font-weight: 600;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            height: 30px;
+            border: 2px solid lightgrey;
+            background-color: white;
+            border-radius: 5px;
+            margin: 0;
+            padding: 2px 12px;
+        }
+
+        select {
+            width: 103%;
+            height: 40px;
+        }
+
+        textarea {
+            min-height: 80px;
+            padding: 10px;
+        }
+
+        .radio-option, .checkbox-option {
+            margin-right: 10px;
+        }
+
+        .form-options {
+            width: 100%;
+            display: block;
+        }
+
+        .terms {
+            width: 100%;
+            margin-left: 5px;
+            font-weight: 400;
+        }
+
+        input[type='radio'], input[type='checkbox'] {
+            width: 14px;
+            height: 14px;
+        }
+
+        button {
+            padding: 10px 30px;
+            margin: 10px 10px 0 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    </style>
+
+    <title>Patricia Sutrisno | Dance Lesson Order Details</title>
+</head>
+<body>
+    <form action="/lab_05/purchase.html">
+        <h1>Dance Lesson Order Details 💃</h1>
+
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Patricia">
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Sutrisno">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="pcsutris@usc.edu">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+        </div>
+
+        <div class="form-group thin">
+            <div class="label">Difficulty:</div>
+
+            <div class="form-options">
+                <input type="radio" id="difficulty-beginner" name="difficulty" value="beginner" checked>
+                <label for="difficulty-beginner" class="radio-option">Beginner</label>
+                
+                <input type="radio" id="difficulty-intermediate" name="difficulty" value="intermediate">
+                <label for="difficulty-intermediate" class="radio-option">Intermediate</label>
+                
+                <input type="radio" id="difficulty-advanced" name="difficulty" value="advanced">
+                <label for="difficulty-advanced" class="radio-option">Advanced</label>
+            </div>
+            
+        </div>
+
+        <div class="form-group thin">
+            <div class="label">Genres:</div>
+
+            <div class="form-options">
+                <input type="checkbox" id="hip-hop" name="hip-hop" value="hip-hop">
+                <label for="hip-hop" class="checkbox-option">Hip-Hop</label>
+
+                <input type="checkbox" id="k-pop" name="k-pop" value="k-pop">
+                <label for="k-pop" class="checkbox-option">K-Pop</label>
+
+                <input type="checkbox" id="contemporary" name="contemporary" value="contemporary">
+                <label for="contemporary" class="checkbox-option">Contemporary</label>
+
+                <input type="checkbox" id="break-dance" name="break-dance" value="break-dance">
+                <label for="break-dance" class="checkbox-option">Break Dance</label>
+            </div>
+            
+        </div>
+
+        <div class="form-group">
+            <label for="group-size">Group Size:</label>
+            <select id="group-size" name="group-size">
+                <option value="1" selected>1</option>
+                <option value="2-5">2 - 5</option>
+                <option value="6-10">6 - 10</option>
+                <option value="11+">11+</option>
+            </select>
+        </div>
+
+        <div class="form-group additional-info">
+            <label for="comments">Additional Information:</label>
+            <textarea id="comments" name="comments" cols="30" rows="5" placeholder="Please let me know if you have any other comments. See you there 👋"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms" value="terms">
+            <label for="terms" class="terms">I accept the terms & conditions.</label>
+        </div>
+
+        <button class="order-button">Order</button>
+        <button class="reset-button" type="reset">Reset</button>
+    </form>
+    
+</body>
+</html>
