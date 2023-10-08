@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            height: 200px;
+            background-image: url(img/gallery/microscope.jpg);
+            background-size: cover;
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        .gallery {
+            width: 1475px;
+            height: 100%;
+            margin: auto;
+            padding: 0;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .row {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .row-1, .row-3 {
+            height: 200px;
+        }
+
+        .row-2 {
+            height: 400px;
+        }
+
+        .row-2-inner {
+            height: 48%;
+            padding: 0;
+        }
+
+        .row-2-inner .w-1 {
+            width: 50%;
+        }
+
+        .squares {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .image {
+            height: 100%;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .caption {
+            color: white;
+            font-size: 30px;
+            font-family: 'Manrope';
+        }
+
+        .image:hover .overlay {
+            opacity: 0.5;
+        }
+
+        .w-1 {
+            width: 25%;
+        }
+
+        .w-2 {
+            width: 50%;
+        }
+
+        .w-3 {
+            width: 75%;
+        }
+
+        .bacteria {
+            background-image: url(img/gallery/bacteria.jpg);
+        }
+
+        .butterfly {
+            background-image: url(img/gallery/butterfly.jpg);
+        }
+
+        .cells {
+            background-image: url(img/gallery/cells.jpg);
+        }
+
+        .coral {
+            background-image: url(img/gallery/coral.jpg);
+        }
+
+        .dna {
+            background-image: url(img/gallery/dna.jpg);
+        }
+
+        .dragonfly {
+            background-image: url(img/gallery/dragonfly.jpg);
+        }
+
+        .firefly {
+            background-image: url(img/gallery/firefly.jpg);
+        }
+
+        .test-tube {
+            background-image: url(img/gallery/test-tube.jpg);
+        }
+
+        .leaf {
+            background-image: url(img/gallery/leaf.jpg);
+        }
+
+        .neurons {
+            background-image: url(img/gallery/neurons.jpg);
+        }
+    </style>
+
+    <title>Gallery</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+
+    <div class="navbar">
+        <button class="home-button"><a href="index.html">Home</a></button>
+        <button class="gallery-button selected">Gallery</button>
+    </div>
+
+    <main>
+        <div class="gallery">
+            <div class="row row-1">
+                <div class="image w-2 h-1 leaf"><div class="overlay"><p class="caption">Leaf</p></div></div>
+                <div class="image w-1 h-1 bacteria"><div class="overlay"><p class="caption">Bacteria</p></div></div>
+                <div class="image w-1 h-1 butterfly"><div class="overlay"><p class="caption">Butterfly</p></div></div>
+            </div>
+            <div class="row row-2">
+                <div class="squares">
+                    <div class="row row-2-inner">
+                        <div class="image w-1 cells"><div class="overlay"><p class="caption">Cells</p></div></div>
+                        <div class="image w-1 coral"><div class="overlay"><p class="caption">Coral</p></div></div>
+                    </div>
+                    <div class="row row-2-inner">
+                        <div class="image w-1 dna"><div class="overlay"><p class="caption">DNA</p></div></div>
+                        <div class="image w-1 dragonfly"><div class="overlay"><p class="caption">Dragonfly</p></div></div>
+                    </div>
+                </div>
+                <div class="image sq w-2 test-tube"><div class="overlay"><p class="caption">Test Tube</p></div></div>
+            </div>
+            <div class="row row-3">
+                <div class="image w-3 neurons"><div class="overlay"><p class="caption">Neurons</p></div></div>
+                <div class="image w-1 firefly"><div class="overlay"><p class="caption">Firefly</p></div></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5>Patricia Sutrisno © 2023</h5>
+    </footer>
+    
+</body>
+</html>
