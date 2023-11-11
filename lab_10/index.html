@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 100vw;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .gallery {
+            margin: auto;
+            position: relative;
+            cursor: pointer;
+            width: 500px;
+            height: 300px;
+        }
+
+        #beach {
+            position: absolute;
+            left: 0;
+            transform: rotate(5deg);
+            transition: left 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        
+        #tree {
+            position: absolute;
+            left: 10px;
+            transform: rotate(10deg);
+            transition: left 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        
+        #desert {
+            position: absolute;
+            left: 20px;
+            transform: rotate(15deg);
+            transition: left 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .gallery:hover #beach {
+            left: -100px;
+            transform: rotate(-10deg);
+            
+        }
+
+        .gallery:hover #tree{
+            left: 100px;
+            transform: rotate(20deg);
+            
+        }
+
+        .gallery:hover #desert{
+            left: 200px;
+            transform: rotate(30deg);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-family: Arial;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+    </style>
+    <title>Animated Gallery</title>
+</head>
+<body>
+    <div class="gallery">
+        <h1>Welcome to my animated gallery 📸</h1>
+        <img src="./img/beach.jpg" alt="Beach" id="beach">
+        <img src="./img/tree.jpg" alt="Tree" id="tree">
+        <img src="./img/desert.jpg" alt="Desert" id="desert">
+    </div>
+    
+</body>
+</html>
