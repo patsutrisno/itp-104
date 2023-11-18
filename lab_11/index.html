@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            text-align: center;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 610px;
+            margin: auto;
+            flex: wrap;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        .moved {
+            position: relative;
+            box-shadow: 0 0 10px 10px gray;
+        }
+
+        .top-right {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .bottom-left {
+            top: 20px;
+            right: 20px;
+            
+        }
+    </style>
+    <title>Image Puzzle</title>
+</head>
+<body>
+    <h1>Image Puzzle</h1>
+    <div class="container">
+        <img src="img/row-1-column-1.jpg" alt="r1c1" class="draggable">
+        <img src="img/row-1-column-3.jpg" alt="r1c2" class="draggable">
+        <img src="img/row-1-column-3.jpg" class="moved top-right draggable" alt="r1c3">
+        
+        <img src="img/row-2-column-1.jpg" alt="r2c1" class="draggable">
+        <img src="img/row-2-column-2.jpg" alt="r2c2" class="draggable">
+        <img src="img/row-2-column-3.jpg" alt="r2c3" class="draggable">
+        
+        <img src="img/row-3-column-1.jpg" class="moved bottom-left draggable" alt="r3c1">
+        <img src="img/row-3-column-2.jpg" alt="r3c2" class="draggable">
+        <img src="img/row-3-column-3.jpg" alt="r3c3" class="draggable">
+    </div>
+    
+    <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
